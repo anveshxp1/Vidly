@@ -17,9 +17,9 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
   </PropertyGroup>
@@ -252,6 +252,10 @@
     <Compile Include="Migrations\201807250157171_AddDrivingLicenceToApplicationUser.cs" />
     <Compile Include="Migrations\201807250157171_AddDrivingLicenceToApplicationUser.Designer.cs">
       <DependentUpon>201807250157171_AddDrivingLicenceToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807260445312_AddPhoneNumberToApplicationUser.cs" />
+    <Compile Include="Migrations\201807260445312_AddPhoneNumberToApplicationUser.Designer.cs">
+      <DependentUpon>201807260445312_AddPhoneNumberToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -580,6 +584,9 @@
     <EmbeddedResource Include="Migrations\201807250157171_AddDrivingLicenceToApplicationUser.resx">
       <DependentUpon>201807250157171_AddDrivingLicenceToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807260445312_AddPhoneNumberToApplicationUser.resx">
+      <DependentUpon>201807260445312_AddPhoneNumberToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -600,7 +607,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49966</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49875/</IISUrl>
+          <IISUrl>https://localhost:44300/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

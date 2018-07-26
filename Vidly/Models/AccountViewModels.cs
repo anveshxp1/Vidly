@@ -84,6 +84,11 @@ namespace Vidly.Models
         [Required]
         [StringLength(255)]
         public string DrivingLicence { get; set; }
+
+        [Display(Name = "Phone Number")]
+        [Required]
+        [StringLength(255)]
+        public string PhoneNumber { get; set; }
     }
 
     public class ResetPasswordViewModel

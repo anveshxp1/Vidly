@@ -156,7 +156,8 @@ namespace Vidly.Controllers
                 { 
                     UserName = model.Email, 
                     Email = model.Email,
-                    DrivingLicence = model.DrivingLicence
+                    DrivingLicence = model.DrivingLicence,
+                    PhoneNumber = model.PhoneNumber
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
